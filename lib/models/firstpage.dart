@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:recipe_app/models/home.dart';
 
-
 class Firstpage extends StatefulWidget {
   Firstpage({Key? key}) : super(key: key);
 
@@ -24,7 +23,7 @@ class _FirstpageState extends State<Firstpage> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 5),
+          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 6),
           child: Align(
             alignment: Alignment.topCenter,
             child: Text(
