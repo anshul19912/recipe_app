@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:recipe_app/models/home.dart';
 
+
 class Firstpage extends StatefulWidget {
   Firstpage({Key? key}) : super(key: key);
 
@@ -27,11 +28,12 @@ class _FirstpageState extends State<Firstpage> {
           child: Align(
             alignment: Alignment.topCenter,
             child: Text(
-              "Food Recipies",
+              "Foodie Recipes",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Colors.orange,
-                  fontWeight: FontWeight.bold,
+                  fontFamily: "Pacifico",
+                  color: Colors.grey.shade300,
+                  fontWeight: FontWeight.w200,
                   fontSize: 38),
             ),
           ),
@@ -54,9 +56,10 @@ class _FirstpageState extends State<Firstpage> {
               child: Center(
                 child: Text("Explore",
                     style: TextStyle(
-                        color: Colors.white,
+                        fontFamily: "Merienda_One",
+                        color: Colors.grey.shade400,
                         fontWeight: FontWeight.bold,
-                        fontSize: 25)),
+                        fontSize: 20)),
               ),
             ),
           ),

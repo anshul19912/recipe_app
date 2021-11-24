@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app/models/Recipeview.dart';
+import 'package:recipe_app/models/secondpage.dart';
 import 'package:recipe_app/services/fetching.dart';
 
+// ignore: must_be_immutable
 class Recipetile extends StatefulWidget {
   Recipetile(
       {Key? key,
@@ -17,23 +19,67 @@ class Recipetile extends StatefulWidget {
   String? image;
   int? readyInMinutes;
   bool? vegetarian;
-  int? healthScore;
+  double? healthScore;
   @override
   _RecipetileState createState() => _RecipetileState();
 }
 
 class _RecipetileState extends State<Recipetile> {
+  void recipeinfo() async {
+    Recipe recipedetail;
+    RecipeSteps listofSteps;
+
+    print('Recipe tile pressed');
+    recipedetail = await fetchinginformation(widget.id!);
+    listofSteps = await fetchingsteps(widget.id!);
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => Searchresult(
+                  recipedetail: recipedetail,
+                  listofSteps: listofSteps,
+                )));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Text(
-            widget.title!,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          Image.network(widget.image!),
-        ],
+    return InkWell(
+      onTap: () {
+        return recipeinfo();
+      },
+      child: Container(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+              child: Container(
+                height: 150,
+                width: 300,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover, image: NetworkImage(widget.image!)),
+                    borderRadius: BorderRadius.all(Radius.circular(25))),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+              child: Text(
+                widget.title!,
+                style: TextStyle(
+                    fontFamily: "Merienda_One",
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
+              ),
+            ),
+
+            // Image.network(widget.image!),
+            SizedBox(
+              height: 50,
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -52,10 +98,12 @@ class _HomeState extends State<Home> {
   List<Widget> searchresult = [];
 
   void searchfunction() async {
+    // ignore: non_constant_identifier_names
     ListofRecipe RECIPES;
     RECIPES = await fetchinglist(searchvalue.text);
 
     setState(() {
+      print('search functino called');
       searchresult.clear();
       for (Recipe item in RECIPES.recipelist ?? []) {
         searchresult.add(Recipetile(
@@ -72,88 +120,79 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-      child: Stack(
-        children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [
-                  Color.fromRGBO(0, 0, 0, 1),
-                  Color.fromRGBO(67, 67, 67, 1),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Column(
-                children: [
-                  SizedBox(height: 25),
-                  Text(
-                    "Foodie Recipes",
-                    style: TextStyle(color: Colors.yellow, fontSize: 25),
+      resizeToAvoidBottomInset: false,
+      body: SafeArea(
+        child: Container(
+          height: MediaQuery.of(context).size.height,
+          width: double.infinity,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(
+                      'lib/models/images/532e23c344e1214f28d59f640ceb58b1.jpg'),
+                  fit: BoxFit.fill)),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 70),
+                Text(
+                  "Want to Cook Something",
+                  style: TextStyle(
+                      fontFamily: "Pacifico",
+                      color: Colors.grey.shade900,
+                      fontSize: 30,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(height: 15),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 5),
+                  child: Text(
+                    "We are here to help you. Search for any Recipe you want to make. Type the name of any Dish or integredient.",
+                    style: TextStyle(
+                      fontFamily: "Merienda_One",
+                      color: Colors.brown.shade700,
+                    ),
                   ),
-                  SizedBox(height: 20),
-                  Row(
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 40, right: 40, top: 7),
+                  child: Row(
                     children: [
-                      Text(
-                        "Want to Cook Something?",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    "We are here to help you. Search for any Recipe you want to make",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  SizedBox(height: 20),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: TextField(
-                            controller: searchvalue,
-                            style: TextStyle(color: Colors.white),
-                            decoration: InputDecoration(
-                              hintText: "Type here",
-                              hintStyle: TextStyle(
-                                  color: Colors.white.withOpacity(0.5)),
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white),
-                              ),
+                      Expanded(
+                        child: TextField(
+                          controller: searchvalue,
+                          style: TextStyle(color: Colors.black),
+                          decoration: InputDecoration(
+                            hintText: "Type here (Eg: Chicken)",
+                            hintStyle: TextStyle(color: Colors.grey),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.black87),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.black87),
                             ),
                           ),
                         ),
-                        SizedBox(width: 10),
-                        InkWell(
-                          onTap: () {
-                            searchfunction();
-                          },
-                          child: Container(
-                            child: Icon(Icons.search, color: Colors.white),
-                          ),
-                        )
-                      ],
-                    ),
+                      ),
+                      SizedBox(width: 10),
+                      InkWell(
+                        onTap: () {
+                          searchfunction();
+                        },
+                        child: CircleAvatar(
+                          backgroundColor: Colors.black,
+                          child: Icon(Icons.search, color: Colors.white),
+                        ),
+                      )
+                    ],
                   ),
-                ],
-              ),
+                ),
+                SizedBox(height: 30),
+                ...searchresult,
+              ],
             ),
           ),
-          Container(child: Column(children: searchresult)),
-        ],
+        ),
       ),
-    ));
+    );
   }
 }
