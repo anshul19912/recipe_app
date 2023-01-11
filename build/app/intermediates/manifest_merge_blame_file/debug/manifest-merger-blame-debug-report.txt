@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.recipe_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:4:1-75
+15-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:4:18-72
+16
+17    <application
+17-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:5:4-43:19
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.6.0] C:\Users\anshu\.gradle\caches\transforms-3\e99008b6c0c296a296aa82225caf873b\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/icon"
+20-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:7:9-36
+21        android:label="Foodie Recipes" >
+21-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:6:9-39
+22        <activity
+22-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:8:9-37:20
+23            android:name="com.example.recipe_app.MainActivity"
+23-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:10:13-41
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:13:13-163
+25            android:exported="true"
+25-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:9:13-36
+26            android:hardwareAccelerated="true"
+26-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:14:13-47
+27            android:launchMode="singleTop"
+27-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:11:13-43
+28            android:theme="@style/LaunchTheme"
+28-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:12:13-47
+29            android:windowSoftInputMode="adjustResize" >
+29-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:15:13-55
+30
+31            <!--
+32                 Specifies an Android theme to apply to this Activity as soon as
+33                 the Android process has started. This theme is visible to the user
+34                 while the Flutter UI initializes. After that, this theme continues
+35                 to determine the Window background behind the Flutter UI.
+36            -->
+37            <meta-data
+37-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:20:13-23:17
+38                android:name="io.flutter.embedding.android.NormalTheme"
+38-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:21:15-70
+39                android:resource="@style/NormalTheme" />
+39-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:22:15-52
+40            <!--
+41                 Displays an Android View that continues showing the launch screen
+42                 Drawable until Flutter paints its first frame, then this splash
+43                 screen fades out. A splash screen is useful to avoid any visual
+44                 gap between the end of Android's launch screen and the painting of
+45                 Flutter's first frame.
+46            -->
+47            <meta-data
+47-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:29:13-32:17
+48                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+48-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:30:15-79
+49                android:resource="@drawable/launch_background" />
+49-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:31:15-61
+50
+51            <intent-filter>
+51-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:33:13-36:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:34:17-68
+52-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:34:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:35:17-76
+54-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:35:27-74
+55            </intent-filter>
+56        </activity>
+57        <!--
+58             Don't delete the meta-data below.
+59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+60        -->
+61        <meta-data
+61-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:40:9-42:33
+62            android:name="flutterEmbedding"
+62-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:41:13-44
+63            android:value="2" />
+63-->D:\Coding\Flutter\recipe_app\android\app\src\main\AndroidManifest.xml:42:13-30
+64
+65        <uses-library
+65-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+66            android:name="androidx.window.extensions"
+66-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+69            android:name="androidx.window.sidecar"
+69-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] C:\Users\anshu\.gradle\caches\transforms-3\8d0b2564f0ac9d7f6ab412f664cb1f00\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+71    </application>
+72
+73</manifest>

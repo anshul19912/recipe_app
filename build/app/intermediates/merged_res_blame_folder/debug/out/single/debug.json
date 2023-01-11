@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable_ashi.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable\\ashi.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-mdpi\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable-v21\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-hdpi\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_launch_background.xml.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_anku.jpg.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xhdpi\\anku.jpg"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_ashi.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable-v21\\ashi.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    }
+]
