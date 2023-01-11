@@ -125,10 +125,13 @@ class _FirstPageState extends State<FirstPage> {
           height: MediaQuery.of(context).size.height,
           width: double.infinity,
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/532e23c344e1214f28d59f640ceb58b1.jpg'),
-                  fit: BoxFit.fill)),
+            gradient: LinearGradient(
+              colors: [Colors.black, Colors.cyanAccent],
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              stops: [0, 1],
+            ),
+          ),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -137,7 +140,7 @@ class _FirstPageState extends State<FirstPage> {
                   "Want to Cook Something?",
                   style: TextStyle(
                       fontFamily: "Pacifico",
-                      color: Colors.grey.shade900,
+                      color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.w400),
                 ),
@@ -148,7 +151,7 @@ class _FirstPageState extends State<FirstPage> {
                     "We are here to help you. Search for any Recipe you want to make. Type the name of any Dish or integredient.",
                     style: TextStyle(
                       fontFamily: "Merienda_One",
-                      color: Colors.brown.shade700,
+                      color: Colors.yellow,
                     ),
                   ),
                 ),

@@ -17,9 +17,13 @@ class _HomePageState extends State<HomePage> {
         Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          child: Image.asset(
-            'assets/images/263d53ed14ea33255b11d342a25c20d4.jpg',
-            fit: BoxFit.fill,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.black, Colors.cyanAccent],
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              stops: [0, 1],
+            ),
           ),
         ),
         Padding(
@@ -31,9 +35,9 @@ class _HomePageState extends State<HomePage> {
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: "Pacifico",
-                  color: Colors.grey.shade300,
+                  color: Colors.white70,
                   fontWeight: FontWeight.w200,
-                  fontSize: 38),
+                  fontSize: 48),
             ),
           ),
         ),
