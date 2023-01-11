@@ -134,7 +134,7 @@ class _FirstPageState extends State<FirstPage> {
               children: [
                 SizedBox(height: 70),
                 Text(
-                  "Want to Cook Something",
+                  "Want to Cook Something?",
                   style: TextStyle(
                       fontFamily: "Pacifico",
                       color: Colors.grey.shade900,
