@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:recipe_app/screens/Recipeview.dart';
+import 'package:recipe_app/models/Recipeview.dart';
 
 Future<ListofRecipe> fetchinglist(String recipename) async {
   var url = Uri.parse(

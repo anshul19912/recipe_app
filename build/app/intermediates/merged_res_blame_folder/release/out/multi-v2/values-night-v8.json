@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/mnt/682440CE2440A144/Coding/Flutter Practice/recipe_app/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "/mnt/682440CE2440A144/Coding/Flutter Practice/recipe_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "D:\\Coding\\Flutter\\recipe_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

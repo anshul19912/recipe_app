@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/screens/Recipeview.dart';
+import 'package:recipe_app/models/Recipeview.dart';
 import 'package:recipe_app/screens/secondpage.dart';
 import 'package:recipe_app/services/fetching.dart';
 
@@ -25,6 +25,7 @@ class Recipetile extends StatefulWidget {
 }
 
 class _RecipetileState extends State<Recipetile> {
+  
   void recipeinfo() async {
     Recipe recipedetail;
     RecipeSteps listofSteps;

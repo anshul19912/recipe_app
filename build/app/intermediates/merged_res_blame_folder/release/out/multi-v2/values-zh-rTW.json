@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/mnt/682440CE2440A144/Coding/Flutter Practice/recipe_app/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "D:\\Coding\\Flutter\\recipe_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/home/anshul19912/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\anshu\\.gradle\\caches\\transforms-3\\e99008b6c0c296a296aa82225caf873b\\transformed\\core-1.6.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
